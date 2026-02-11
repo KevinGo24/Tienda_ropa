@@ -1,0 +1,172 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+
+.Contenedor_padre {
+      background-color: #F4E3C6;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.Lista {
+      display: flex;
+      justify-content: space-between;
+      /* distribuye a izquierda-centro-derecha */
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 25px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bolder;
+      border: solid 10px whitesmoke;
+}
+
+.Lista li {
+      margin: 0 15px;
+}
+
+a {
+      transition: 05s;
+      text-decoration: none;
+      color:black;
+}
+
+li {
+      transition: 0.5s;
+}
+
+li:hover {
+      transform: scale(1.15);
+      text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.Carito_compra{
+      background-image: url(/Icon/carito\ de\ compra.svg);
+      background-size:contain;
+      background-repeat: no-repeat;
+      height: 30px;
+      width: 40px;
+      background-position: center;
+}
+.Carito_compra:hover {
+      transform: scale(1.3);
+      cursor: pointer;
+}
+.hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: black;
+      backdrop-filter: blur(3px);
+}
+
+.hero h1 {
+      font-size: 70px;
+      font-weight: bold;
+      margin-bottom: 20px;
+}
+
+.hero p {
+      font-size: 25px;
+      margin-bottom: 30px;
+}
+
+.btn-hero {
+      padding: 10px 20px;
+      background: white;
+      color: black;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: 0.3s;
+}
+
+.btn-hero:hover {
+      transform: scale(1.5);
+}
+
+.productos {
+      padding: 40px 20px;
+      text-align: center;
+      color: black;
+      border: solid 10px white;
+      border-radius: 10px 10px 5px;
+}
+
+.productos h2 {
+      font-size: 45px;
+      margin-bottom: 30px;
+}
+
+/* GRID DE TARJETAS */
+.contenedor-productos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.card {
+      width: 250px;
+      height: 350px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+      text-align: center;
+      padding: 10px;
+      transition: 0.4s;
+}
+
+/* ANIMACIÓN: se acerca con SCALE (igual que tus li) */
+.card:hover {
+      transform: scale(1.1);
+}
+
+/* IMAGEN (puedes poner tus propias fotos) */
+.card .img {
+      width: 100%;
+      height: 180px;
+      background-color: rgb(200, 200, 200);
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+      background-image: url(/Picture/camisa\ casual.jpg);
+}
+
+/* TITULOS Y TEXTOS */
+.card h3 {
+      margin: 10px 0;
+      font-size: 22px;
+      color: black;
+}
+
+.card p {
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+}
+
+/* BOTÓN */
+.card button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+}
+
+.card button:hover {
+      transform: scale(1.1);
+}
