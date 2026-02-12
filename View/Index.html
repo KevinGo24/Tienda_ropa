@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
       <title>Inicio</title>
 
 </head>
+
 <body>
       <div class="Contenedor_padre">
             <nav>
@@ -16,7 +18,12 @@
                         <li> <a href="#">Inicio</a></li>
                         <li> <a href="#">Ayuda</a></li>
                         <li> <a href="#">Ubicacion</a></li>
-                        <li class="Carito_compra"><a href="#"></a></li>
+                        <li class="Carito_compra">
+                              <a href="#" class="boton-carrito">
+                                    <span class="icono">🛒</span>
+                                    <span class="contador" id="cantidad-carrito">0</span>
+                              </a>
+                        </li>
                   </ul>
             </nav>
             <div class="hero">
@@ -26,30 +33,30 @@
             </div>
             <div class="productos">
                   <h2>Nuestros Productos</h2>
-            
+
                   <div class="contenedor-productos">
-            
+
                         <div class="card">
                               <div class="img"></div>
                               <h3>Camisa Clásica</h3>
                               <p>$25.00</p>
                               <button>Añadir al carrito</button>
                         </div>
-            
+
                         <div class="card">
                               <div class="img"></div>
                               <h3>Pantalón Azul</h3>
                               <p>$35.00</p>
                               <button>Añadir al carrito</button>
                         </div>
-            
+
                         <div class="card">
                               <div class="img"></div>
                               <h3>Sudadera Negra</h3>
                               <p>$28.00</p>
                               <button>Añadir al carrito</button>
                         </div>
-            
+
                   </div>
             </div>
 
