@@ -11,6 +11,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       font-style: oblique;
+      background: fixed;
 }
 nav {
       position: sticky;
