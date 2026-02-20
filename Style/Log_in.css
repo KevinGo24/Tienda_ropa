@@ -29,6 +29,19 @@ h1 {
       font-style: oblique;
       gap: 20px;
       font-style: oblique;
+      animation: infinite fondo 5s;
+}
+
+@keyframes fondo {
+      0%{
+            background: #89a7b1;
+      }
+      50%{
+            background: #bd2f28;
+      }
+      100%{
+            background: #89a7b1;
+      }
 }
 
 .hijo {
