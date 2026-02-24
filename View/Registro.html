@@ -17,21 +17,29 @@
                   <h2>Registro de Usuario</h2>
                   <div class="hijo_menor">
                         <h3>Nombre: </h3>
-                        <input type="text" placeholder="Primer nombre y segundo " class="Tbx" id="Tbx_rol">
+                        <input type="text" placeholder="Primer nombre y segundo " class="Tbx" id="Reg_nombre">
                         <h3>Apellido: </h3>
-                        <input type="password" placeholder="Primer apellido y segundo" class="Tbx" id="Tbx_rol">
+                        <input type="text" placeholder="Primer apellido y segundo" class="Tbx" id="Reg_apellido">
+                        <h3>Rol: </h3>
+                        <select class="Tbx" id="Reg_rol">
+                              <option value="">-- Seleccione un Rol --</option>
+                              <option value="admin">Administrador</option>
+                              <option value="usuario">Usuario</option>
+                              <option value="diseño">Diseño</option>
+                        </select>
                         <h3>Correo electronico: </h3>
-                        <input type="text" placeholder="usuario@gmail.com o usuario@hotmail.com" class="Tbx" id="Tbx_users">
+                        <input type="email" placeholder="usuario@gmail.com o usuario@hotmail.com" class="Tbx" id="Reg_mail">
                         <h3>Contraseña: </h3>
-                        <input type="password" placeholder="Contraseña" class="Tbx" id="Tbx_users">
+                        <input type="password" placeholder="Contraseña" class="Tbx" id="Reg_password">
                         <h3>Repita su contraseña: </h3>
-                        <input type="password" placeholder="Digite otra vez su contraseña" class="Tbx" id="Tbx_users">
+                        <input type="password" placeholder="Digite otra vez su contraseña" class="Tbx" id="Reg_Repit">
                         <h3>Fecha de Nacimiento: </h3>
-                        <input type="date" placeholder="Contraseña" class="Tbx" id="Tbx_users">
-                        <button class="Btn_ingreso" id="Btn_ingreso" onclick="Ingreso()">Registrar</button>
+                        <input type="date" placeholder="Contraseña" class="Tbx" id="Reg_date">
+                        <button class="Btn_ingreso" id="Btn_ingreso" onclick="Registro()">Registrar</button>
                   </div>
             </div>
       </div>
+      <script src="/Logic/Login.js"></script>
 </body>
 
 </html>
