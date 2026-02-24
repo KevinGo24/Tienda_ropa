@@ -20,14 +20,20 @@
                         <h3>Correo electronico: </h3>
                         <input type="email" placeholder="Digite su usuario" class="Tbx" id="Tbx_users">
                         <h3>Rol: </h3>
-                        <input type="text" placeholder="Ej. Admin - Usuario - Diseño" class="Tbx" id="Tbx_rol">
+                        <select class="Tbx" id="Tbx_rol">
+                              <option value="">-- Seleccione un Rol --</option>
+                              <option value="admin">Administrador</option>
+                              <option value="usuario">Usuario</option>
+                              <option value="diseño">Diseño</option>
+                        </select>
                         <h3>Contraseña: </h3>
-                        <input type="password" placeholder="Digite su contraseña" class="Tbx" id="Tbx_pass" >
+                        <input type="password" placeholder="Digite su contraseña" class="Tbx" id="Tbx_pass">
                         <button class="Btn_ingreso" id="Btn_ingreso" onclick="Ingreso()">Bienvenidos</button>
-                        <a class="Btn_registro" id="Link_registro" href="/View/Registro.html" >¡¡ Registrarse !!</a>
+                        <a class="Btn_registro" id="Link_registro" href="/View/Registro.html">¡¡ Registrarse !!</a>
                   </div>
             </div>
       </div>
 </body>
 <script src="/Logic/Login.js"></script>
+
 </html>

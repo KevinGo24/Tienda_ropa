@@ -18,11 +18,18 @@ function Ingreso() {
       }
 
 
-      // 3. Validación de Roles Específicos
-      // 3. Validación de Roles (Sugerencia: usa .toLowerCase() para que no falle por mayúsculas)
+      // 1. Primero validamos si está vacío
+      if (rol === "") {
+            alert("🚨 Por favor, selecciona un rol.");
+            return;
+      }
+
+      // 2. Comprobamos si el valor es uno de los permitidos
+      // Usamos .toLowerCase() por seguridad
       const rolMin = rol.toLowerCase();
+
       if (rolMin !== "admin" && rolMin !== "usuario" && rolMin !== "diseño") {
-            alert("Rol no válido. Solo se permite: Admin, Usuario o Diseño.");
+            alert("❌ Rol no reconocido.");
             return;
       }
 
