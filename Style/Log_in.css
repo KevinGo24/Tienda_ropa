@@ -98,6 +98,7 @@ h4 {
       transition: 1s;
       border: none;
       font-style: oblique;
+      cursor: pointer;
 }
 
 .Btn_ingreso:hover {
