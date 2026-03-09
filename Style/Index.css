@@ -12,9 +12,7 @@
       /* Esto hace que el fondo no se mueva al hacer scroll */
 
       font-style: oblique;
-      animation: fondo 5s infinite;
       /* Corregido el orden: nombre, duración, repetición */
-
       /* Asegúrate de que el contenedor tenga dimensiones para verse */
       min-height: 100vh;
       width: 100%;
@@ -109,7 +107,7 @@ li:hover {
       /* Lo hace resaltar sobre cualquier fondo */
 }
 .hero {
-      height: 90vh;
+      height: 30vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
