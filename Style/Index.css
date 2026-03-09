@@ -3,7 +3,14 @@
       padding: 0;
       box-sizing: border-box;
 }
+body{
+            font-style: oblique;
+      /* Corregido el orden: nombre, duración, repetición */
+      /* Asegúrate de que el contenedor tenga dimensiones para verse */
+      min-height: 100vh;
+      width: 100%;
 
+}
 
 .Contenedor_padre {
       /* Combinamos todo en la propiedad 'background' o usamos las específicas */
