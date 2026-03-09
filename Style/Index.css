@@ -271,3 +271,113 @@ h2 {
 .card button:hover {
       transform: scale(1.1);
 }
+
+/* Estilos generales del Footer */
+.main-footer {
+    /* Usamos una versión más oscura de tu azul para dar profundidad */
+    background: linear-gradient(135deg, #bd2f28 50px, #89a7b1 100%);
+    color: #ffffff;
+    padding: 60px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+}
+
+/* El logo usa tu rojo para destacar */
+.footer-logo {
+    color: white; 
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    color: white; /* Un gris azulado claro para los textos largos */
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Línea decorativa bajo los títulos con tu azul claro */
+.footer-section h3::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #89a7b1; 
+    margin-top: 8px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section a {
+    color: #89a7b1; /* Los enlaces inician con tu azul claro */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Al pasar el mouse, el enlace brilla en tu rojo */
+.footer-section a:hover {
+    color: #bd2f28; 
+    padding-left: 5px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.social-icons a:hover {
+    color: #bd2f28;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(137, 167, 177, 0.2); /* Borde sutil con tu azul */
+    font-size: 0.85rem;
+    color:white;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-section h3::after {
+        margin: 8px auto 0;
+    }
+}
