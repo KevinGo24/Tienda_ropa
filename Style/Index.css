@@ -59,6 +59,7 @@ a {
       transition: 05s;
       text-decoration: none;
       color: white;
+      text-shadow: 5px 5px 5px black;
 }
 
 li {
@@ -67,8 +68,8 @@ li {
 
 li:hover {
 
-      transform: scale(1.1);
-      box-shadow: 10px 1px 10px #89a7b1;
+      transform: scale(1.);
+      
 }
 
 .boton-carrito {
@@ -124,6 +125,7 @@ li:hover {
       text-align: center;
       color: white;
       backdrop-filter: blur(3px);
+      text-shadow: 5px 5px 5px black;
 }
 
 .hero h1 {
@@ -242,12 +244,14 @@ li:hover {
 /* TITULOS Y TEXTOS */
 h2 {
       color: white;
+      text-shadow: 5px 5px 5px black;
 }
 
 .card h3 {
       margin: 10px 0;
       font-size: 22px;
       color: white;
+      text-shadow: 5px 5px 5px black;
 }
 
 .card p {
